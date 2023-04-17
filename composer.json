@@ -1,0 +1,48 @@
+{
+  "name": "tedon/laravel-tasquirrel",
+  "description": "A package to handle tasks inside laravel application.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pouya Zouravand",
+      "email": "pouya.zuravand@gmail.com"
+    }
+  ],
+  "type": "library",
+  "keywords": [
+    "Laravel",
+    "Task",
+    "LaravelTask",
+    "Tasquirrel",
+    "LaravelTasquirrel",
+    "Tedon"
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "orchestra/canvas": "^7.4",
+    "orchestra/testbench": "^7.16"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Tedon\\LaravelTasquirrel\\Providers\\TasquirrelServiceProvider"
+      ],
+      "aliases": {
+        "Tasquirrel": "Tedon\\LaravelTasquirrel\\Facades\\Tasquirrel"
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Tedon\\LaravelTasquirrel\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+  },
+  "minimum-stablity": "dev"
+}
