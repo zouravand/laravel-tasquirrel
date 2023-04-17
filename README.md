@@ -1,3 +1,3 @@
-# Laravel Actor
+# Laravel Tasquirrel
 
-A brand option to have specific action fields in model.
+A package to handle tasks inside laravel application.
